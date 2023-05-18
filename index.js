@@ -53,3 +53,23 @@ gsap.to("#image", {
     backgroundImage:  'url("./img.jpg")',
 });
 
+gsap.to('#logo', {
+    delay: 8.5,
+    duration: 1,
+    opacity: 1,
+})
+
+gsap.from('#cta',{
+    delay: 9,
+    x: 0,
+    y:-200
+})
+
+gsap.to('#cta', {
+    delay: 9,
+    duration: 1,
+    opacity: 1,
+    y: 0,
+    x: 0,
+})
+

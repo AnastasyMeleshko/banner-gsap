@@ -55,6 +55,7 @@ div {
     left: 15px;
     background: url('logo.svg') center center no-repeat;
     opacity: 0;
+    z-index: 5;
 }
 
 
@@ -79,6 +80,7 @@ div {
     background-color: #00bcf2;
     color: #fff;
     opacity: 0;
+    z-index: 5;
 }
 
 /********************** TEXT **********************/
