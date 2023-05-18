@@ -63,7 +63,7 @@ div {
 
 #cta {
     width: 147px;
-    height: 39px;
+    padding: 12px 0;
     bottom: 15px;
     left: 15px;
     display: flex;
@@ -95,6 +95,38 @@ div {
     font-weight: 400;
     font-size: 28px;
     letter-spacing: -0.1px;
+    opacity: 0;
+    z-index: 5;
+    color: #ffffff;
+}
+
+#frame1 {
+    z-index: 6;
+    opacity: 1;
+}
+#frame2 {
+    z-index: 5;
+    opacity: 0;
+}
+
+#word1,
+#word2,
+#word3,
+#word4,
+#word5,
+#word6,
+#word7,
+#word8,
+#word9,
+#word10,
+#word11,
+#word12,
+#word13,
+#word14,
+#word15,
+#word16,
+#word17,
+#word18 {
     opacity: 0;
 }
 
@@ -292,5 +324,6 @@ div {
     border-radius: 50%;
     border: 1px solid #ffffff;
 }
+
 
 
