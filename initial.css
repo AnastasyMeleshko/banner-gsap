@@ -82,6 +82,7 @@ div {
     color: #fff;
     opacity: 0;
     z-index: 5;
+    overflow: hidden;
 }
 
 /********************** TEXT **********************/
@@ -105,38 +106,39 @@ div {
     z-index: 6;
     opacity: 1;
 }
+
 #frame2 {
     z-index: 5;
     opacity: 0;
 }
 
-#word1,
-#word2,
-#word3,
-#word4,
-#word5,
-#word6,
-#word7,
-#word8,
-#word9,
-#word10,
-#word11,
-#word12,
-#word13,
-#word14,
-#word15,
-#word16,
-#word17,
-#word18 {
-    opacity: 0;
-}
+/*#word1,*/
+/*#word2,*/
+/*#word3,*/
+/*#word4,*/
+/*#word5,*/
+/*#word6,*/
+/*#word7,*/
+/*#word8,*/
+/*#word9,*/
+/*#word10,*/
+/*#word11,*/
+/*#word12,*/
+/*#word13,*/
+/*#word14,*/
+/*#word15,*/
+/*#word16,*/
+/*#word17,*/
+/*#word18 {*/
+/*    opacity: 0;*/
+/*}*/
 
 .frame {
     color: #ffffff;
 }
 
 .blue {
-    color:#00bcf2;
+    color: #00bcf2;
 }
 
 /********************** IMAGE **********************/
@@ -329,10 +331,6 @@ div {
 }
 
 /* Button sparkling animation */
-
-#cta {
-    overflow: hidden;
-}
 
 #wrapper #cta::before {
     content: "";
