@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*************** MAIN ELEMENTS ***************/
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    position: absolute;
+}
+
+#wrapper {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 600px;
+    background: #fff;
+    overflow: hidden;
+}
+
+#wrect {
+    width: inherit;
+    height: inherit;
+    background: #fff;
+    pointer-events: none;
+}
+
+#border {
+    border: 1px solid #9a9a9a;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: inherit;
+    height: inherit;
+    pointer-events: none;
+}
+
+#bgexit {
+    width: inherit;
+    height: inherit;
+    cursor: pointer;
+}
+
+
+/******************** LOGO ********************/
+
+#logo {
+    cursor: pointer;
+    width: 86px;
+    height: 86px;
+    top: 15px;
+    left: 15px;
+    background: url('logo.svg') center center no-repeat;
+    opacity: 0;
+}
+
+
+/******************** BUTTON ********************/
+
+#cta {
+    width: 147px;
+    height: 39px;
+    bottom: 15px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #00bcf2;
+    color: #fff;
+    opacity: 0;
+}
+
+/********************** TEXT **********************/
+
+#textWrap {
+    width: 271px;
+    height: 250px;
+    top: 112px;
+    left: 15px;
+    line-height: 110%;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: -0.1px;
+    opacity: 0;
+}
+
+.frame {
+    color: #ffffff;
+}
+
+.blue {
+    color:#00bcf2;
+}
+
+/********************** IMAGE **********************/
+
+#image {
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.img1 {
+    background-image: url("./img1.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.img2 {
+    background-image: url("./img2.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.img3 {
+    background-image: url("./img3.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.img4 {
+    background-image: url("./img4.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.img5 {
+    background-image: url("./img5.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.img6 {
+    background-image: url("./img6.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.img7 {
+    background-image: url("./img7.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.img8 {
+    background-image: url("./img8.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.img9 {
+    background-image: url("./img9.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.img10 {
+    background-image: url("./img10.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.img11 {
+    background-image: url("./img11.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.img12 {
+    background-image: url("./img12.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.img13 {
+    background-image: url("./img13.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.img14 {
+    background-image: url("./img14.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.img15 {
+    background-image: url("./img15.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.img16 {
+    background-image: url("./img16.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.img17 {
+    background-image: url("./img17.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.img18 {
+    background-image: url("./img18.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+
+.img {
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+
+}
+
+.piece {
+    position: relative;
+    z-index: 5;
+}
+
+/********************** LOADER **********************/
+
+#loader {
+    display: grid;
+    place-content: center;
+    position: relative;
+    top: 50%;
+    z-index: 10;
+    text-align: center;
+    transform: translateY(-50%);
+    background-color: #00bcf2;
+    height: 100%;
+}
+
+#my-text {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #ffffff;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    position: relative;
+    z-index: 5;
+}
+
+#photo {
+    width: 100px;
+    height: 100px;
+    background-image: url("./new.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+}
+
+
