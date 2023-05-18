@@ -1,4 +1,13 @@
+//Redirect to Google:
+
+const wrapper = document.getElementById('wrapper');
+
+wrapper.onclick = () => {
+    document.location.assign('https://google.com');
+}
+
 // Preloader
+
 gsap.from('#my-text', {
    duration: 2,
    x: 0,
@@ -81,14 +90,14 @@ gsap.to('#cta', {
 
 gsap.from('#textWrap', {
     delay: 10,
-    y: -300,
-    x: -300,
+    y: -200,
+    x: 0,
 })
 
 gsap.to('#textWrap', {
-    delay: 10,
+    delay: 10.2,
     opacity: 1,
-    duration: 0.1,
+    duration: 0.5,
     y: 0,
     x: 0,
 })
@@ -97,7 +106,7 @@ const numberOfWordsInFrameOne = 16;
 
 function showText1() {
     let delayInterval = 0.2;
-    let startDelay = 10;
+    let startDelay = 10.2;
     for (let i=1; i<numberOfWordsInFrameOne; i++) {
         gsap.to(`#word${i}`, {
             delay: startDelay + delayInterval*i,
@@ -113,11 +122,10 @@ showText1();
 
 gsap.to('#textWrap', {
     delay: 15,
-    opacity: 1,
-    duration: 1,
-    y: -250,
-    x: 400,
-})
+    opacity: 0,
+    scale: 0,
+    duration: 1.2,
+});
 
 function hideText1() {
     let startDelay = 15;
@@ -125,7 +133,8 @@ function hideText1() {
         gsap.to(`#word${i}`, {
             delay: startDelay,
             opacity: 0,
-            duration: 0.1,
+            duration: 2,
+            scale: 0,
             y: 0,
             x: 0,
         })
@@ -134,20 +143,14 @@ function hideText1() {
 
 hideText1();
 
-gsap.from('#textWrap', {
-    delay: 16,
-    y: -300,
-    x: -300,
-})
-
 gsap.to('#textWrap', {
     delay: 16,
     opacity: 1,
-    duration: 0.5,
+    scale: 1.0,
+    duration: 1.5,
     y: 0,
     x: 0,
 })
-
 
 gsap.to('#frame2', {
     delay: 16,
@@ -156,4 +159,12 @@ gsap.to('#frame2', {
     y: 0,
     x: 0,
 })
+
+gsap.to('#frame2', {
+    color: "#fac847",
+    duration: 2,
+    repeat: -1,
+    yoyo: true,
+});
+
 
