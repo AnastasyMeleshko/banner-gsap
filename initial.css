@@ -12,6 +12,11 @@ div {
     position: absolute;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 #wrapper {
     display: block;
     top: 0;
@@ -21,6 +26,7 @@ div {
     background: #fff;
     overflow: hidden;
     cursor: pointer;
+    border: 1px solid #313131;
 }
 
 #wrect {
@@ -111,28 +117,6 @@ div {
     z-index: 5;
     opacity: 0;
 }
-
-/*#word1,*/
-/*#word2,*/
-/*#word3,*/
-/*#word4,*/
-/*#word5,*/
-/*#word6,*/
-/*#word7,*/
-/*#word8,*/
-/*#word9,*/
-/*#word10,*/
-/*#word11,*/
-/*#word12,*/
-/*#word13,*/
-/*#word14,*/
-/*#word15,*/
-/*#word16,*/
-/*#word17,*/
-/*#word18 {*/
-/*    opacity: 0;*/
-/*}*/
-
 .frame {
     color: #ffffff;
 }
@@ -303,9 +287,9 @@ div {
     z-index: 10;
     text-align: center;
     transform: translateY(-50%);
-    background-image: url("./ramadan2.jpg");
-    background-size: cover;
+    background: linear-gradient(0deg, rgb(231, 231, 231), rgb(51, 56, 56) 1%, #00bcf2 92%);
     height: 100%;
+    border: 1px solid rgb(80, 80, 80);
 }
 
 #my-text {
